@@ -1,0 +1,1 @@
+document.getElementById('openBtn').addEventListener('click',()=>{document.getElementById('coupon').classList.toggle('hidden');});
