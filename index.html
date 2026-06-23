@@ -1,1 +1,158 @@
-<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Feliz 3er Aniversario, Pimpolla</title><link rel="stylesheet" href="styles.css"></head><body><h1>Feliz 3er Aniversario, Pimpolla</h1><p id="loveMessage">Mi amor, gracias por cada momento compartido.</p><button id="openBtn">Abrir Regalo</button><div id="coupon" class="hidden">Cupón válido para redimir por 6 productos de Trendy</div><script src="script.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Feliz 3er Aniversario, Pimpolla</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Peanuts-like alternatives -->
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Floating Background Elements -->
+    <div class="background-hearts"></div>
+
+    <main class="container">
+
+        <!-- HERO -->
+        <section class="hero">
+
+            <div class="hero-badge">
+                ❤️ Nuestro Día Especial ❤️
+            </div>
+
+            <h1 class="main-title">
+                Feliz 3er Aniversario, Pimpolla
+            </h1>
+
+            <p class="subtitle">
+                Tres años construyendo recuerdos, aventuras y momentos inolvidables.
+            </p>
+
+        </section>
+
+        <!-- GIFT SECTION -->
+        <section class="gift-section">
+
+            <!-- Snoopy Scene -->
+            <div class="snoopy-scene">
+
+                <div class="snoopy-wrapper">
+
+                    <!-- Snoopy SVG -->
+                    <svg class="snoopy" viewBox="0 0 260 280" xmlns="http://www.w3.org/2000/svg">
+
+                        <!-- Ears -->
+                        <ellipse cx="75" cy="80" rx="20" ry="55" fill="#111"/>
+                        <ellipse cx="185" cy="80" rx="20" ry="55" fill="#111"/>
+
+                        <!-- Head -->
+                        <ellipse cx="130" cy="95" rx="60" ry="55" fill="#fff" stroke="#111" stroke-width="3"/>
+
+                        <!-- Nose -->
+                        <ellipse cx="130" cy="118" rx="15" ry="10" fill="#111"/>
+
+                        <!-- Eyes -->
+                        <circle cx="110" cy="85" r="4" fill="#111"/>
+                        <circle cx="150" cy="85" r="4" fill="#111"/>
+
+                        <!-- Body -->
+                        <ellipse cx="130" cy="190" rx="55" ry="65" fill="#fff" stroke="#111" stroke-width="3"/>
+
+                        <!-- Arms -->
+                        <line x1="90" y1="165" x2="45" y2="180" stroke="#111" stroke-width="6" stroke-linecap="round"/>
+                        <line x1="170" y1="165" x2="215" y2="180" stroke="#111" stroke-width="6" stroke-linecap="round"/>
+
+                        <!-- Legs -->
+                        <line x1="110" y1="250" x2="100" y2="275" stroke="#111" stroke-width="6" stroke-linecap="round"/>
+                        <line x1="150" y1="250" x2="160" y2="275" stroke="#111" stroke-width="6" stroke-linecap="round"/>
+
+                    </svg>
+
+                    <!-- Gift -->
+                    <div id="giftBox" class="gift-box">
+
+                        <div class="gift-glow"></div>
+
+                        <div id="giftLid" class="gift-lid">
+                            <span class="ribbon-vertical"></span>
+                            <span class="ribbon-horizontal"></span>
+                        </div>
+
+                        <div class="gift-body">
+                            <span class="ribbon-vertical"></span>
+                            <span class="ribbon-horizontal"></span>
+                        </div>
+
+                        <!-- Coupon -->
+                        <div id="coupon" class="coupon">
+
+                            <div class="coupon-inner">
+
+                                <div class="coupon-tag">
+                                    ❤️ REGALO ESPECIAL ❤️
+                                </div>
+
+                                <h2>Cupón Especial</h2>
+
+                                <p class="coupon-message">
+                                    Cupón válido para redimir por
+                                    <strong>6 productos de Trendy</strong>
+                                </p>
+
+                                <p class="coupon-love">
+                                    Con mucho amor para ti 🩵
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- LOVE MESSAGE -->
+            <div class="message-card">
+
+                <!-- EASY TO EDIT -->
+                <p id="loveMessage">
+                    My love, thank you for every beautiful moment we have shared together.
+                    This small gift is just another way to remind you how much I love you.
+                </p>
+
+            </div>
+
+            <!-- ACTIONS -->
+            <div class="actions">
+
+                <button id="openBtn" class="btn primary-btn">
+                    Abrir Regalo
+                </button>
+
+                <button id="backBtn" class="btn secondary-btn hidden">
+                    Volver
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <div id="effectsContainer"></div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
