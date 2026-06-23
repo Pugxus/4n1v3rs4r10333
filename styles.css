@@ -83,9 +83,21 @@ body{
 }
 
 .snoopy{
-    width:min(260px,70vw);
-    margin-bottom:-20px;
+    display:block;
+    width:min(340px, 75vw);
+    height:auto;
+    object-fit:contain;
+
+    margin-bottom:-25px;
+
     animation:floatSnoopy 4s ease-in-out infinite;
+
+    user-select:none;
+    pointer-events:none;
+
+    filter:
+        drop-shadow(0 10px 20px rgba(0,0,0,.12))
+        drop-shadow(0 0 20px rgba(109,207,246,.15));
 }
 
 .gift-box{
@@ -389,4 +401,20 @@ body{
     .main-title{
         font-size:6rem;
     }
+}
+
+@media (max-width:768px){
+
+    .snoopy{
+        width:min(280px, 80vw);
+    }
+
+}
+
+@media (max-width:480px){
+
+    .snoopy{
+        width:min(240px, 85vw);
+    }
+
 }
