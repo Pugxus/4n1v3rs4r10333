@@ -49,7 +49,7 @@ function createHearts() {
         const heart = document.createElement("div");
 
         heart.classList.add("heart");
-        heart.innerHTML = Math.random() > 0.5 ? "🩵" : "❤️";
+        heart.innerHTML = Math.random() > 0.5 ? "🩵" : "🤍";
 
         heart.style.left =
             window.innerWidth / 2 +
@@ -98,20 +98,3 @@ function createSparkles() {
         }, 2200);
     }
 }
-
-/*
-==================================================
-CUSTOMIZABLE LOVE MESSAGE
-==================================================
-
-Edit the text inside the HTML element:
-
-<p id="loveMessage">
-
-Example:
-
-Mi amor, gracias por estos tres años
-llenos de felicidad...
-
-==================================================
-*/
